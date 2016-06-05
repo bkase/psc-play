@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
   ];
 
   shellHook = ''
-    [ $(node -p "require('pulp/package.json').version") != "9.0.0" ] && npm install pulp@9.0.0
+    [ $(node -p "try{require('pulp/package.json').version}catch(e){}") != "9.0.0" ] && npm install pulp@9.0.0
     export PATH=$PATH:./node_modules/.bin
   '';
 }
