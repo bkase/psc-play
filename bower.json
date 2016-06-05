@@ -1,0 +1,17 @@
+{
+  "name": "psc-play",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-console": "^1.0.0"
+    "purescript-prelude": "~0.1.5",
+    "purescript-eff": "~0.1.2"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^1.0.0"
+  }
+}
